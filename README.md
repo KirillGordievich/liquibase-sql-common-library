@@ -1,2 +1,2 @@
 # liquibase-sql-common-library
-SQL library with many useful functions
+SQL library (schema) with many useful functions
