@@ -1,0 +1,5 @@
+driver: org.postgresql.Driver
+url: jdbc:postgresql:PUT_DB_NAME_HERE
+username: PUT_LIQUIABASE_ROLE_HERE
+password: PUT_LIQUIABASE_PASSWORD_HERE
+changeLogFile: ./sql/changelog.xml
