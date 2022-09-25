@@ -21,8 +21,11 @@ plpgSQL schema with many useful functions
 - common.assert_equal
 - common.iif
 
-**Functions that work with database data snd settings**
+**Functions that work with database data and settings**
 - common.get_all_roles_of
+
+**Cryptography functions**
+- common.pseudo_encrypt
 ## Requirements
 
 - postgresql
