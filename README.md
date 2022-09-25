@@ -1,6 +1,31 @@
 # PostgreSQL common-db-schema (plpgsql-common-library)
 plpgSQL schema with many useful functions
 
+# Content
+
+**Functions to work with JSON:**
+- common.jsonb_diff_objects
+- common.jsonb_extract_text_array
+
+**Functions to raise errors and report messages:**
+- common.raise_notice
+- common.raise_info
+- common.raise_warning
+- common.raise_exception
+
+**Functions to work with numbers:**
+- common.trim_decimal
+
+**Functions to check conditions**
+- common.assert
+- common.assert_equal
+- common.iif
+
+**Functions that work with database data and settings**
+- common.get_all_roles_of
+
+**Cryptography functions**
+- common.pseudo_encrypt
 ## Requirements
 
 - postgresql

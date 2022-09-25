@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+            http://www.liquibase.org/xml/ns/dbchangelog-ext
+            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="2022-09-25-add-pseudo-encrypt" author="kirillgordievich">
+        <!-- Functions -->
+        <sqlFile path="../../latest/functions/cryptography/common.pseudo_encrypt.sql"
+            relativeToChangelogFile="true" splitStatements="false" endDelimiter=""/>
+
+        <rollback>
+            DROP FUNCTION IF EXISTS common.pseudo_encrypt(id int4, key int4) CASCADE;
+            DROP FUNCTION IF EXISTS common.pseudo_encrypt(id int8, key int8) CASCADE;
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>
