@@ -17,4 +17,12 @@
         <tagDatabase tag="v1.0.0:END"/>
     </changeSet>
 
+    <changeSet id="v1.1.0" author="kirillgordievich">
+        <tagDatabase tag="v1.1.0"/>
+    </changeSet>
+    <include file="./migrations/2022-09-25-add-pseudo-encrypt/changelog.xml" relativeToChangelogFile="true"/>
+    <changeSet id="v1.1.0:end" author="kirillgordievich">
+        <tagDatabase tag="v1.1.0:END"/>
+    </changeSet>
+
 </databaseChangeLog>
