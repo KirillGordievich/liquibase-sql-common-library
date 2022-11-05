@@ -38,20 +38,22 @@
             relativeToChangelogFile="true" splitStatements="false" endDelimiter=""/>
 
         <rollback>
-            DROP FUNCTION IF EXISTS common.iif CASCADE;
-            DROP FUNCTION IF EXISTS common.assert CASCADE;
-            DROP FUNCTION IF EXISTS common.assert_equal CASCADE;
-            DROP FUNCTION IF EXISTS common.get_all_roles_of CASCADE;
+            <sql>
+                DROP FUNCTION IF EXISTS common.iif CASCADE;
+                DROP FUNCTION IF EXISTS common.assert CASCADE;
+                DROP FUNCTION IF EXISTS common.assert_equal CASCADE;
+                DROP FUNCTION IF EXISTS common.get_all_roles_of CASCADE;
 
-            DROP FUNCTION IF EXISTS common.jsonb_diff_objects CASCADE;
-            DROP FUNCTION IF EXISTS common.jsonb_extract_text_array CASCADE;
+                DROP FUNCTION IF EXISTS common.jsonb_diff_objects CASCADE;
+                DROP FUNCTION IF EXISTS common.jsonb_extract_text_array CASCADE;
 
-            DROP FUNCTION IF EXISTS common.raise_notice CASCADE;
-            DROP FUNCTION IF EXISTS common.raise_info CASCADE;
-            DROP FUNCTION IF EXISTS common.raise_warning CASCADE;
-            DROP FUNCTION IF EXISTS common.raise_exception CASCADE;
+                DROP FUNCTION IF EXISTS common.raise_notice CASCADE;
+                DROP FUNCTION IF EXISTS common.raise_info CASCADE;
+                DROP FUNCTION IF EXISTS common.raise_warning CASCADE;
+                DROP FUNCTION IF EXISTS common.raise_exception CASCADE;
 
-            DROP FUNCTION IF EXISTS common.trim_decimal CASCADE;
+                DROP FUNCTION IF EXISTS common.trim_decimal CASCADE;
+            </sql>
         </rollback>
     </changeSet>
 
