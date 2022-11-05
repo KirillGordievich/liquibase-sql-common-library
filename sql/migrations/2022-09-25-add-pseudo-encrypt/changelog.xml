@@ -14,8 +14,10 @@
             relativeToChangelogFile="true" splitStatements="false" endDelimiter=""/>
 
         <rollback>
-            DROP FUNCTION IF EXISTS common.pseudo_encrypt(id int4, key int4) CASCADE;
-            DROP FUNCTION IF EXISTS common.pseudo_encrypt(id int8, key int8) CASCADE;
+            <sql>
+                DROP FUNCTION IF EXISTS common.pseudo_encrypt(id int4, key int4) CASCADE;
+                DROP FUNCTION IF EXISTS common.pseudo_encrypt(id int8, key int8) CASCADE;
+            </sql>
         </rollback>
     </changeSet>
 
